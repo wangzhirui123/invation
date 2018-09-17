@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="utf-8" />
+    <meta name="Author" content="河北新奔腾软件有限公司，PHP技术组" />
+    <meta name="keywords" content="cbtms, hebgc, hebjs, 河北建设工程信息网, 河北, 建设, 建筑, 住建, 项目, 工程, 招投标, 招标, 投标, 交易, 管理, 中心" />
+    <link rel="shortcut icon" href="./tpl/default/favicon.ico" sizes="128x128" type="image/png" />
+    <link rel='stylesheet' href='./tpl/default/loader/reset.css.php' type='text/css' media='screen, print' />
+    <link rel='stylesheet' href='./tpl/default/loader/default.css.php' type='text/css' media='screen, print' />
+    <link rel='stylesheet' href='./tpl/hebgc2009/css/default.css' type='text/css' media='screen, print' />
+    <link rel='stylesheet' href='./tpl/default/css/law.css' type='text/css' media='screen, print' />
+    <style type="text/css" media="all">
+/*<![CDATA[*/
+                <!--
+                
+                -->
+    /*]]>*/
+    </style>
+    <script type='text/javascript' src='/js/json2.js'>
+</script>
+    <script type='text/javascript' src='/js/jquery.js'>
+</script>
+    <script type='text/javascript' src='/js/jquery.cookies.js'>
+</script>
+    <script type='text/javascript' src='/js/DatePicker/WdatePicker.js'>
+</script>
+    <script type='text/javascript' src='./tpl/default/js/common.js'>
+</script>
+    <script type="text/javascript">
+            <!--//--><![CDATA[//>
+                <!--
+                        // 如果js中要引用模板路径
+                        tpl_dir = './tpl/hebgc2009/';
+                //--><!]]>
+    </script>
+    <title>
+      河北省建设工程招投标交易管理及计算机辅助评标系统
+    </title>
+    <style type="text/css">
+/*<![CDATA[*/
+        #left_pic_table tr{ padding:0px; margin:0px; margin-bottom:-5px}
+        #left_pic_table td{ padding:0px; margin:0px}
+        #left_pic_table img{ padding:0px; margin:0px; display:block}
+        #left_pic_table a{ padding:0px; margin:0px}
+        #left_pic_table a:hover{ background-color:#FFF}
+    /*]]>*/
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img src="./tpl/hebgc2009/images/logo2018.jpg" alt="河北省建设工程招投标交易管理及计算机辅助评标系统" />
+      <div id="menu">
+        <table border="0" cellspacing="0" cellpadding="0" width="800">
+          <tr style="text-align:center;">
+            <td style="font-size:1px; width:3px">
+              <img src="./tpl/hebgc2009/images/li_title_left.gif" />
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=site_index">首页</a>
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=eng-anc-list">招标公告</a>
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=eng-pub-list">中标公示</a>
+            </td>
+            <td style=
+            "width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px; font-weight:bold;">
+              <a href="?a=credit-index">信用综合评价</a>
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=xgxz">相关下载</a>
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=service_online">在线服务</a>
+            </td>
+            <td style="width:14%; text-align:center; background-image:url(./tpl/hebgc2009/images/li_title_middle.gif); background-repeat:repeat-x; vertical-align:top; padding-top:3px">
+              <a href="?a=special_title">专题栏目</a>
+            </td>
+            <td style="font-size:1px; width:3px">
+              <img src="./tpl/hebgc2009/images/li_title_right.gif" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="content">
+      <div id='second_box'>
+        <div id='select'>
+          <div id='second_search'>
+            <form action='http://www.google.com/search' method='get'>
+              <input maxlength='255' size='20' name='q' /> <input type='hidden' value='utf-8' name='ie' /> <input type='hidden' value='utf-8' name='oe' /> <input type='hidden' value='zh-CN' name=
+              'hl' /> <input type='submit' value='Google 搜索' name='btnG' /> <input type='hidden' value='http://zbb.hebjs.gov.cn' name='domains' /> <input type='radio' name='sitesearch' /> 搜索WWW
+              <input type='radio' checked='checked' value='http://zbb.hebjs.gov.cn' name='sitesearch' /> 本站搜索
+            </form>
+          </div><script type='text/javascript'>
+//<![CDATA[
+          function today (sel) {
+                  var currentDate,day,month,tml;
+                  var h,m,s,datestr,timestr,week,timehtml;
+                  currentDate = new Date();
+                  with (currentDate){
+                                day=getDay();
+                                month=getMonth()+1;
+                                h=(getHours()>9)?(getHours()):('0'+getHours());
+                                m=(getMinutes()>9)?(getMinutes()):('0'+getMinutes());
+                                s=(getSeconds()>9)?(getSeconds()):('0'+getSeconds());
+                                datestr=getFullYear()+'年'+month+'月'+getDate()+'日';
+                                timestr=h+':'+m+':'+s;
+                  }
+                  if (day==1){week=' 星期一';}
+                  if (day==2){week=' 星期二';}
+                  if (day==3){week=' 星期三';}
+                  if (day==4){week=' 星期四';}
+                  if (day==5){week=' 星期五';}
+                  if (day==6){week=' 星期六';}
+                  if (day==0){week=' 星期日';}
+                  if(sel=='full'){ tml=datestr+' '+timestr+' '+week;}
+                  if(sel=='timestamp'){tml=datestr+' '+timestr;}
+                  document.getElementById('time').innerHTML=tml;
+                  setTimeout('today("full")',200);
+          }
+          //]]>
+          </script>
+          <div id='time'>
+            <script type='text/javascript'>
+//<![CDATA[
+            today('full');
+            //]]>
+            </script>
+          </div>
+          <hr class='clearit' color='#CCCCCC' size='1px' width='799px' />
+        </div>
+        <div id='second_body_left'>
+          <table border='0' cellpadding='0' cellspacing='0' width='205' id='left_pic_table'>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=site_index'><img name='dhtp_r1_c1' src='./tpl/hebgc2009/images/dhtp_r1_c1.jpg' width='205' height='51' border='0' id='dhtp_r1_c1' alt='' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;region=&amp;title='><img name='dhtp_r2_c1' src='./tpl/hebgc2009/images/dhtp_r2_c1.gif' width='205' height='46' border='0' id='dhtp_r2_c1' alt=
+                '全部' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z01&amp;region=&amp;title='><img name='dhtp_r2_c1' src='./tpl/hebgc2009/images/dhtp_r2_c1.jpg' width='205' height='46' border='0' id=
+                'dhtp_r2_c1' alt='施工' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z0101&amp;region=&amp;title='><img name='dhtp_r3_c1' src='./tpl/hebgc2009/images/dhtp_r3_c1.jpg' width='205' height='42' border='0'
+                id='dhtp_r3_c1' alt='基础' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z0102&amp;region=&amp;title='><img name='dhtp_r4_c1' src='./tpl/hebgc2009/images/dhtp_r4_c1.jpg' width='205' height='43' border='0'
+                id='dhtp_r4_c1' alt='主体' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z0103&amp;region=&amp;title='><img name='dhtp_r5_c1' src='./tpl/hebgc2009/images/dhtp_r5_c1.jpg' width='205' height='41' border='0'
+                id='dhtp_r5_c1' alt='安装' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z0104&amp;region=&amp;title='><img name='dhtp_r6_c1' src='./tpl/hebgc2009/images/dhtp_r6_c1.jpg' width='205' height='41' border='0'
+                id='dhtp_r6_c1' alt='装饰装修' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z02&amp;region=&amp;title='><img name='dhtp_r7_c1' src='./tpl/hebgc2009/images/dhtp_r7_c1.jpg' width='205' height='42' border='0' id=
+                'dhtp_r7_c1' alt='监理招标' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z03&amp;region=&amp;title='><img name='dhtp_r8_c1' src='./tpl/hebgc2009/images/dhtp_r8_c1.jpg' width='205' height='41' border='0' id=
+                'dhtp_r8_c1' alt='勘察招标' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z04&amp;region=&amp;title='><img name='dhtp_r9_c1' src='./tpl/hebgc2009/images/dhtp_r9_c1.jpg' width='205' height='46' border='0' id=
+                'dhtp_r9_c1' alt='设计招标' /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href='./hebgc2009/?a=eng-anc-list&amp;cat_bid1=Z05&amp;region=&amp;title='><img name='dhtp_r10_c1' src='./tpl/hebgc2009/images/dhtp_r10_c1.jpg' width='205' height='69' border='0'
+                id='dhtp_r10_c1' alt='材料设备招标' /></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id='second_body_right'>
+          <h4>
+            招标公告详细情况
+          </h4>
+          <table class='eng_anc_detail single_line'>
+            <tr>
+              <td nowrap='nowrap' scope="col">
+                工程编码
+              </td>
+              <td>
+                130900180138-001&nbsp;
+              </td>
+              <td>
+                所属地区
+              </td>
+              <td>
+                沧州市&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                工程名称
+              </td>
+              <td colspan="3">
+                <span class="">中节能（沧州）环保能源有限公司扩建项目设计</span> &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                建设单位
+              </td>
+              <td colspan="3">
+                中节能（沧州）环保能源有限公司&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                工程地点
+              </td>
+              <td colspan="3">
+                沧州市新华区经十一大街西侧顾官屯村南&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                建筑面积
+              </td>
+              <td class='c2'>
+                14948 平方米 &nbsp;
+              </td>
+              <td class='c3'>
+                招标性质
+              </td>
+              <td class='c4'>
+                设计招标&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                工程招标范围
+              </td>
+              <td colspan="3">
+                详见招标文件&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td nowrap='nowrap'>
+                招标代理单位
+              </td>
+              <td colspan="3">
+                北京奇泰桥工程技术咨询有限公司&nbsp;
+              </td>
+            </tr>
+            <tr style="display: none">
+              <td>
+                投标资质要求
+              </td>
+              <td colspan="3">
+                暂无详细资质要求，请以内容为准。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                资格审查方式
+              </td>
+              <td>
+                资格后审&nbsp;
+              </td>
+              <td>
+                合同估算价
+              </td>
+              <td>
+                550 （万元） &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                资格审查必要合格条件
+              </td>
+              <td colspan="3">
+                投标人须具备工程设计综合甲级资质或同时具备电力行业（火力发电（含核电站常规岛设计））乙级及以上资质和环境工程专项设计（固体废物处理处置工程）甲级资质，并 在人员、设备、资金等方面具有相应的能力。&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                资格审查文件价格
+              </td>
+              <td>
+                &nbsp;
+              </td>
+              <td>
+                招标文件价格
+              </td>
+              <td>
+                400 元 &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                文件发售地点
+              </td>
+              <td colspan="3">
+                登录“河北省建设工程招投标交易管理及计算机辅助评标系统（其它网站无效）”下载相关招标文件&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                联系人
+              </td>
+              <td>
+                史东军&nbsp;
+              </td>
+              <td>
+                联系方式
+              </td>
+              <td>
+                17659702093&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                公告发布开始时间
+              </td>
+              <td>
+                2018-09-04 09:30:00&nbsp;
+              </td>
+              <td>
+                公告发布截止时间
+              </td>
+              <td>
+                2018-09-09 17:00:00&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                招标文件下载开始时间
+              </td>
+              <td>
+                2018-09-04 09:30:00&nbsp;
+              </td>
+              <td>
+                招标文件下载截止时间
+              </td>
+              <td>
+                2018-09-09 17:00:00&nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                招标文件下载
+              </td>
+              <td colspan='3'>
+                <a href='./?m=hebgc&amp;a=section-tender-file-download&amp;section=5b8c8667-5e14-0001-c54e-b7598f40b347'>点这里下载招标文件和招标资料</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                内容
+              </td>
+              <td colspan="3">
+                招标公告<br />
+                1．中节能（沧州）环保能源有限公司扩建项目，已由有关部门批准建设，具备招标条件。北京奇泰桥工程技术咨询有限公司受中节能（沧州）环保能源有限公司委&nbsp;托，现决定对该项目设计进行公开招标，择优选定承包人。<br />
+                2．项目概况与招标范围：<br />
+                2.1&nbsp;招标项目名称：中节能（沧州）环保能源有限公司扩建项目设计。<br />
+                2.2&nbsp;招标项目的建设地点：沧州市新华区经十一大街西侧顾官屯村南，中节能（沧州）环保能源有限公司东侧预留场地。<br />
+                2.3招标范围：<br />
+                设计范围：<br />
+                下述工程设计范围为初步设计、工程概算、施工图设计（含一期外立面、屋面、管道、栈桥、参观通道及部分设备设施改造等）。<br />
+                （1）主系统及生产辅助工程。<br />
+                （2）车间的工艺、结构、建筑、暖通、给排水、自控、电气、节能和消防（含一期技改等）。<br />
+                （3）工艺热力管道。<br />
+                下述工程设计范围内的初步设计、工程概算、主要设备技术要求或规范、施工图设计。<br />
+                沧州垃圾发电扩建项目，采用800t/d机械炉排式垃圾焚烧锅炉，配18MW中温次高压凝汽式汽轮机组方案的工艺、结构、建筑、暖通、给排水、自控、电气、节能和消防专篇设计等。<br />
+                （4）设计中水给水、市政自来水、污水排水管线等系统场外施工图。<br />
+                （5）负责招标单位一期和二期工程的系统接口设计。<br />
+                2.4&nbsp;标段划分：无。<br />
+                2.5&nbsp;设计周期：签订合同后3个月内完成相关设计工作。<br />
+                2.6&nbsp;项目建设内容及规模：800t/d机械炉排式垃圾焚烧锅炉，配18MW中温次高压凝汽式汽轮机组，日处理生活垃圾800吨。项目总投资33399.26万元。<br />
+                2.7质量要求：达到国家现行设计规范要求。<br />
+                3．投标人资格要求：<br />
+                3.1投标人须具备工程设计综合甲级资质或同时具备电力行业（火力发电（含核电站常规岛设计））乙级及以上资质和环境工程专项设计（固体废物处理处置工程）甲级资质，并&nbsp;在人员、设备、资金等方面具有相应的能力。<br />
+                3.2&nbsp;单位负责人为同一人或存在控股、管理关系的不同单位，不得同时对本项目提出投标申请，否则相关投标均无效。<br />
+                3.3投标人的财务状况，无破产、资产被冻结、接管等情况发生，信誉良好，无履约不良、被投诉情况，所承担的总承包项目未发生重大伤亡责任事故、重大质量事故和重大环境污染事故，且在国家企业信用信息公示系统（http://www.gsxt.gov.cn）上无不良信用记录。<br />
+                3.4&nbsp;本次招标不接受联合体投标报名。<br />
+                4.&nbsp; 招标文件的获取：<br />
+                4.1&nbsp;凡有意参加投标者，请于2018年&nbsp;09&nbsp;月&nbsp;04&nbsp;日9:30至2018年&nbsp;09&nbsp;月&nbsp;
+                09&nbsp;日17:00登录“河北省建设工程招投标交易管理及计算机辅助评标系统（其它网站无效）”下载相关招标文件，并及时查看有无澄清和修改。投标申请人如未从河北省建设工程招投标交易管理及计算机辅助评标系统下载相关资料，或未获取到完整资料，导致投标被否决的，自行承担责任。<br />
+                4.2&nbsp;本项目一律通过“河北省建设工程招投标交易管理及计算机辅助评标系统”发布澄清、补疑、答疑等文件，投标单位要随时登陆查看。未能及时关注造成的一切后果&nbsp;由投标单位自行承担。<br />
+                5.投标文件的递交<br />
+                5.1&nbsp;投标文件递交的截止时间(投标截止时间)为2018年&nbsp;09&nbsp;月&nbsp;25&nbsp;日9:30，地点为沧州市公共资源交易中心三楼第八开标室。<br />
+                5.2&nbsp;逾期送达的或者未送达指定地点的投标文件，招标人不予受理。<br />
+                6.&nbsp;开标现场支付工本费，招标文件费400元人民币，售后不退。<br />
+                7.&nbsp;本次招标公告同时在河北省建设工程招投标交易管理及计算机辅助评标系统、河北省招标投标公共服务平台、沧州市公共资源交易中心网上发布。<br />
+                <br />
+                招&nbsp;标&nbsp;人：中节能（沧州）环保能源有限公司&nbsp;<br />
+                办公地址：沧州市新华区经十一大街西侧顾官屯村南<br />
+                联&nbsp;系&nbsp;人：乔主任&nbsp;<br />
+                联系电话：0317-5637065<br />
+                招标代理机构：北京奇泰桥工程技术咨询有限公司&nbsp;<br />
+                办&nbsp;公&nbsp;地&nbsp;址：北京市通州区永乐店镇永乐大街13号<br />
+                联&nbsp;系&nbsp;电&nbsp;话：&nbsp;17659702093<br />
+                联　　系　　人：&nbsp;史东军 &nbsp;
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class='clearit'></div>
+      </div>
+      <div class="clearit"></div>
+    </div>
+    <div id="footer">
+      <hr />
+      <div style="margin-left: 2em">
+        <p>
+          Copyright © 1998-2018 河北省建设工程招投标管理办公室, All Rights Reserved.
+        </p>
+        <p>
+          备案登记号：冀ICP备020866, <a href="http://www.miibeian.gov.cn/">冀ICP备06001993号</a>。 <script type="text/javascript">
+                      <!--//--><![CDATA[//>
+                                <!--
+                                        var m='w'+'eb';
+                                        m += '@';
+                                        m += 'heb';
+                                        m += 'gc'+'.';
+                                        m += 'com';
+                                        m='<a href="https://exmail.qq.com/login">Email<\/a>: <a href="mailto:'+m+'">'+m+'<\/a>';
+                                        document.write(m);
+                                //--><!]]>
+          </script>
+        </p>
+        <p>
+          技术支持： <a href="http://www.nptsoft.com/">河北新奔腾软件有限公司</a>
+        </p><iframe style="display: none" src="http://zbb.hebjs.gov.cn/ztb/online.aspx"></iframe>
+        <p>
+          Processed in 0.0191 seconds, 0/0/0 db queries, cache <span style="cursor: pointer;" onclick=
+          "javascript: var obj=getElementById('fwlib_debuginfo_cache_logget'); if ('none'==obj.style.display || ''==obj.style.display) {obj.style.display='block';} else {obj.style.display='none';};">logget</span>.
+        </p>
+        <ul id="fwlib_debuginfo_cache_logget" style="display: none;">
+          <li style="text-align: left">√: eng/anc/detail/web/459398
+          </li>
+        </ul><!-- debug info -->
+      </div><script type="text/javascript">
+//<![CDATA[
+                        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+      </script> <script type="text/javascript">
+//<![CDATA[
+                        try {
+                        var pageTracker = _gat._getTracker("UA-273266-2");
+                        pageTracker._trackPageview();
+                        } catch(err) {}
+      //]]>
+      </script>
+      <div style="width:60px;height:80px;margin:0 auto;">
+        <script type="text/javascript">
+//<![CDATA[
+                    document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/05/000/0000/60631286/CA050000000606312860002.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+        </script>
+      </div>
+      <div style="width:300px;margin:0 auto; padding:20px 0;" id="footer">
+        <a target="_blank" href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="./tpl/cttms2005/images/police.png" style="float:left;" /></a>
+        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+          冀公网安备 13010502001368号
+        </p>
+      </div>
+    </div>
+  </body>
+</html><!-- Compatible with old view before PSR -->
